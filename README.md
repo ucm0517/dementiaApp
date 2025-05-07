@@ -1,3 +1,50 @@
+🧠 Dementia Self-Assessment App (React Native)
+This is a React Native-based mobile application for dementia self-assessment, allowing users to respond to questions via voice recognition or text input.
+The app guides users through both conversational and cognitive questions, scores their responses, and provides a summarized result.
+
+📱 Key Features
+1. Voice Recognition & TTS
+- Uses react-native-voice for speech input
+- Uses react-native-tts to read questions aloud
+
+2. Dual Input Support (Voice & Text)
+- Users can either speak or type their responses
+- Includes retry functionality with "Speak Again" button
+
+3. Question Flow
+- 4 Dialogue Questions about mood, daily life, recent interactions
+- 5 Cognitive Questions including date recall, mental math, memory, and language ability
+
+4. Automatic Scoring & Result Summary
+- Separate scores for dialogue and cognitive sections
+- Displays total score (out of 30) and a result interpretation
+
+5. User-Friendly UI
+- Clearly structured interface with assistant messages, user input, and final report
+- Easy-to-use buttons for speaking, submitting text, and retrying
+
+⚙️ Tech Stack
+- React Native
+- react-native-voice: Voice recognition
+- react-native-tts: Text-to-speech synthesis
+- Custom evaluators: evaluateAnswer, evaluateDialogueAnswer
+- State management with useState, useEffect
+- UI: View, TextInput, TouchableOpacity, ScrollView, etc.
+
+📊 Assessment Flow
+- Greeting & introduction
+- Dialogue phase (4 questions)
+- Cognitive phase (5 questions)
+- Total score calculation and final result message
+
+📎 Notes
+- This app is intended for self-screening purposes only and does not replace medical diagnosis.
+- Currently uses rule-based answer evaluation; may be expanded with AI-powered NLP in future versions.
+
+
+
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
